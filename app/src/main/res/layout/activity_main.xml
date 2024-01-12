@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_background"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="185dp"
+        android:layout_height="321dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/FunctionButtonsRadioGroup"
+                android:layout_width="196dp"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/PricerFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Pricer"
+                    tools:ignore="TextContrastCheck" />
+
+                <RadioButton
+                    android:id="@+id/PlayDiceFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Play Dice" />
+
+                <RadioButton
+                    android:id="@+id/CombinationsandPermutationsFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Combinations and Permutations" />
+
+                <RadioButton
+                    android:id="@+id/PasswordGeneratorFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Password Generator" />
+
+                <RadioButton
+                    android:id="@+id/UsernameGeneratorFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Username Generator" />
+
+                <RadioButton
+                    android:id="@+id/LeetTextFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Leet Text" />
+
+                <RadioButton
+                    android:id="@+id/CoinTossFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Coin Toss" />
+
+                <RadioButton
+                    android:id="@+id/NumberGeneratorFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Number Generator" />
+
+                <RadioButton
+                    android:id="@+id/MeasurementConverterFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Measurement Converter" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/FunctionTableInstructionsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a function from the list below:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/FunctionSelectButton"
+        android:layout_width="137dp"
+        android:layout_height="43dp"
+        android:background="@drawable/custom_button_design"
+        android:text="Select Function"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

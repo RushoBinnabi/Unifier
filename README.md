@@ -1,0 +1,57 @@
+# Unifier
+
+- #### About Unifier:
+	- The Unifier* app combines everyday useful tools that might be beneficial to have with you at all times. It can calculate prices of items based on a given discount or tax rate. It can convert temperatures. It can generate random usernames and passwords based on a given length if you ever need a new username or password. It can roll a pair of dices if you happen to be playing a board game and are in need of a dice or two. And a whole bunch of stuff.
+	- *final name to be determined.
+- #### Installation:
+	- This app cannot be installed on a computer. This app has to be downloaded and installed on a phone running Android 9 (Pie) or above using this [link](https://play.google.com/store/apps/details?id=rusho.app.unifer).
+
+- #### How to Use:
+	- #### Main Menu:
+		- When prompted, select any of the functions from the list of functions and click the 'Select Function' button:
+	- #### Pricer:
+		- When prompted, enter the price of an item, what the tax or discount rate of wherever you are living or buying from is, and use the switch to select on whether or not you want to calculate the final price of the item with tax or discount. Then, just click on the 'Calculate Price' button to get the final price of the item with tax or discount, or click on the 'Clear' button to clear all inputs and outputs and reset the function. Or if you want to return to the main menu, just click the 'Main Menu' button:
+	- #### Play Dice:
+		- When prompted, using the switch, select on whether you want to roll one six-faced dice or if you want to roll two of them and then click the 'Roll Dice' button to roll the dice(s). Or click the 'reset' button to reset the rolled dices and the function itself:
+	- #### Combinations and Permutations:
+		- When prompted, enter the total number of objects that you have as well as the number of objects you have to choose from the total. Then choose if you're allowed to have duplicates (repeats) of those objects and if the order of the objects matters or not. Lastly, click on the 'Calculate' button to get the number of combinations or permutations with or without repetition. Click on the 'Reset' button to reset the function and clear all the data:
+	- #### Password Generator:
+		- When prompted, enter a number for the length of the password. Then click the 'Generate Password' button to generate a random password full of letters, numbers, and symbols, based on the number for the length you specified. Click on the 'Reset' button to reset the function and clear all data:
+	- #### Username Generator:
+		- When prompted, enter a number for the length of the username. Then click the 'Generate Username' button to generate a random password full of letters, numbers, and symbols, based on the number for the length you specified. Click on the 'Reset' button to reset the function and clear all data:
+	- #### Leet Text:
+		- When prompted, enter the text that you want to have converted to its 'leet speak' equivalent. Then click the 'Generate Leet Text' button to get the leet speak equivalent of the text that was entered. Click on the 'Clear' button to clear all data and reset the function:
+	- #### Coin Toss:
+		- When prompted, click the 'Toss Coin' button to 'toss' a coin which will either land on its head or tail. Click the 'Reset Toss' button to reset the function and clear all data:
+	- #### Number Generator:
+		- When prompted, enter a number which will be the minimum number in a range. Then enter another number which will be the maximum number in a range. Click on the 'Generate Number' button which will generate a random number that is between the range of the minimum and maximum numbers. Click on the 'Clear' button to clear the data and reset the function:
+	- **Measurement Converter:**
+		- When prompted, select a function from the list of functions and click the 'Select Function' button to be taken to that function. Click either the 'Main Menu' to be taken back to the main menu of the app:
+	- **Measurement Converter - Ounces (oz) to Pounds (lbs):**
+		- When prompted, enter a number and click the 'Convert' button for the value to be converted from ounces to pounds and vice versa. Click the 'Clear' button to clear all data. Click either the 'Measurement Converter' or 'Main Menu' buttons to either be taken back to the main menu of the app or the main measurement converter function:
+	- **Measurement Converter - Milliliters (mL) to Liters (L):**
+			- When prompted, enter a number and click the 'Convert' button for the value to be converted from milliliters to liters and vice versa. Click the 'Clear' button to clear all data. Click either the 'Measurement Converter' or 'Main Menu' buttons to either be taken back to the main menu of the app or the main measurement converter function:
+	- **Measurement Converter - Tons (t) to Milligrams (mg):**
+		- When prompted, enter a number and click the 'Convert' button for the value to be converted from tons to milligrams and vice versa. Click the 'Clear' button to clear all data. Click either the 'Measurement Converter' or 'Main Menu' buttons to either be taken back to the main menu of the app or the main measurement converter function:
+	- **Measurement Converter - Grams (g) to Kilograms (kg):**
+			- When prompted, enter a number and click the 'Convert' button for the value to be converted from grams to kilograms and vice versa. Click the 'Clear' button to clear all data. Click either the 'Measurement Converter' or 'Main Menu' buttons to either be taken back to the main menu of the app or the main measurement converter function:
+	- **Measurement Converter - Cups (c) to Pints (pt):**
+		- When prompted, enter a number and click the 'Convert' button for the value to be converted from cups to pints and vice versa. Click the 'Clear' button to clear all data. Click either the 'Measurement Converter' or 'Main Menu' buttons to either be taken back to the main menu of the app or the main measurement converter function:
+	- **Measurement Converter - Quart (qt) to Gallons (gal):**
+		- When prompted, enter a number and click the 'Convert' button for the value to be converted from quarts to gallons and vice versa. Click the 'Clear' button to clear all data. Click either the 'Measurement Converter' or 'Main Menu' buttons to either be taken back to the main menu of the app or the main measurement converter function:
+	- **Measurement Converter - Millimeters (mm) to Centimeters (cm):**
+		- When prompted, enter a number and click the 'Convert' button for the value to be converted from millimeters to centimeters and vice versa. Click the 'Clear' button to clear all data. Click either the 'Measurement Converter' or 'Main Menu' buttons to either be taken back to the main menu of the app or the main measurement converter function:
+	- **Measurement Converter - Meters (m) to Kilometers (km):**
+		- When prompted, enter a number and click the 'Convert' button for the value to be converted from meters to kilometers and vice versa. Click the 'Clear' button to clear all data. Click either the 'Measurement Converter' or 'Main Menu' buttons to either be taken back to the main menu of the app or the main measurement converter function:
+	- **Measurement Converter - Inches (in) to Feet (ft):**
+		- When prompted, enter a number and click the 'Convert' button for the value to be converted from inches to feet and vice versa. Click the 'Clear' button to clear all data. Click either the 'Measurement Converter' or 'Main Menu' buttons to either be taken back to the main menu of the app or the main measurement converter function:
+	- **Measurement Converter - Yards (yd) to Miles (mi):**
+		- When prompted, enter a number and click the 'Convert' button for the value to be converted from yards to miles and vice versa. Click the 'Clear' button to clear all data. Click either the 'Measurement Converter' or 'Main Menu' buttons to either be taken back to the main menu of the app or the main measurement converter function:
+	- **Measurement Converter - Milliliters (mL) to Fluid Ounces (fl oz):**
+		- When prompted, enter a number and click the 'Convert' button for the value to be converted from milliliters to fluid ounces and vice versa. Click the 'Clear' button to clear all data. Click either the 'Measurement Converter' or 'Main Menu' buttons to either be taken back to the main menu of the app or the main measurement converter function:
+	- **Measurement Converter - Teaspoons (tsp) to Tablespoons (tbsp):**
+		- When prompted, enter a number and click the 'Convert' button for the value to be converted from teaspoons to tablespoons and vice versa. Click the 'Clear' button to clear all data. Click either the 'Measurement Converter' or 'Main Menu' buttons to either be taken back to the main menu of the app or the main measurement converter function:
+	- #### Measurement Converter - Temperature:
+		- When prompted, enter either a temperature and click the 'Convert Temperature' button that will be convert the given temperature into Fahrenheit from Celsius and vice versa using whatever conversion you have selected using the switch. Additionally, click the 'Clear' button to clear all inputs and outputs and reset the function:
+- #### Developer Contact Information:
+	- Email: RushoBinnabi123@yahoo.com

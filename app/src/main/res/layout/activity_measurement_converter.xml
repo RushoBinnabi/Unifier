@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_background">
+
+    <Button
+        android:id="@+id/MeasurementConverterFunctionSelectButton"
+        android:layout_width="137dp"
+        android:layout_height="43dp"
+        android:background="@drawable/custom_button_design"
+        android:text="Select Function"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/MeasurementConverterFunctionTableInstructionsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a function from the list below:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <Button
+        android:id="@+id/mainMenuButton2"
+        android:layout_width="102dp"
+        android:layout_height="39dp"
+        android:background="@drawable/custom_background_design"
+        android:onClick="measurementConverterChangetoMainMenuScreen"
+        android:text="Main Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <ScrollView
+        android:id="@+id/MeasurementConverterScrollView"
+        android:layout_width="285dp"
+        android:layout_height="296dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44">
+
+        <LinearLayout
+            android:id="@+id/MeasurementConverterLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/MeasurementConverterRadioGroup"
+                android:layout_width="278dp"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/OuncesToPoundsFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Ounces (oz) to Pounds (lb)" />
+
+                <RadioButton
+                    android:id="@+id/MillilitersToLitersFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Milliliters (mL) to Liters (L)" />
+
+                <RadioButton
+                    android:id="@+id/TonsToMilligramsFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Tons (t) to Milligrams (mg)" />
+
+                <RadioButton
+                    android:id="@+id/GramsToKilogramsFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Grams (g) to Kilograms (kg)" />
+
+                <RadioButton
+                    android:id="@+id/CupsToPintsFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Cups (c) to Pints (pt)" />
+
+                <RadioButton
+                    android:id="@+id/QuartsToGallonsFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Quarts (c) to Gallons (gal)" />
+
+                <RadioButton
+                    android:id="@+id/MillimetersToCentimetersFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Millimeters (mm) to Centimeters (cm)" />
+
+                <RadioButton
+                    android:id="@+id/MetersToKilometersFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Meters (m) to Kilometers (km)" />
+
+                <RadioButton
+                    android:id="@+id/InchesToFeetFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Inches (in) to Feet (ft)" />
+
+                <RadioButton
+                    android:id="@+id/YardsToMilesFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Yards (yd) to Miles (mi)" />
+
+                <RadioButton
+                    android:id="@+id/MillilitersToFluidOuncesFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Milliliters (mL) to Fluid Ounces (fl oz)" />
+
+                <RadioButton
+                    android:id="@+id/TeaspoonsToTablespoonsFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Teaspoons (tsp) to Tablespoons (tbsp)" />
+
+                <RadioButton
+                    android:id="@+id/TemperatureFunctionRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#7986CB"
+                    android:text="Temperature" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,194 @@
+{
+  "main": {
+    "id": "5e627eeeb6f31094",
+    "type": "split",
+    "children": [
+      {
+        "id": "2fa3fd74f9e6533d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f3fd14a1b23581e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            },
+            "group": "ac70441ac2c0dd5c"
+          }
+        ]
+      },
+      {
+        "id": "20d5d252e46144ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3558558a273a881a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "preview",
+                "source": false
+              }
+            },
+            "group": "ac70441ac2c0dd5c"
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "68d648c8f387ba8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "00289f611c6d3414",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6b8ecc0430a47f0d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "981e0535c2c0af5e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2cdce984c728a16b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "right": {
+    "id": "d96eabf94d50a571",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b7efccbb73641d3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8c28be0e372263f5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e15572e704ca3b0a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "95a1e27d8f75a24a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e920dd98110628dd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "f3fd14a1b23581e8",
+  "lastOpenFiles": [
+    "Screenshot_20230806-180039_Unifier.jpg",
+    "Screenshot_20230802-195514_Unifier.jpg",
+    "Screenshot_20230802-195344_Unifier.jpg",
+    "Screenshot_20230802-195008_Unifier.jpg",
+    "Screenshot_20230802-194720_Unifier.jpg",
+    "Screenshot_20230802-194447_Unifier.jpg",
+    "Screenshot_20230802-194343_Unifier.jpg",
+    "Screenshot_20230802-193840_Unifier.jpg",
+    "Screenshot_20230802-193626_Unifier.jpg",
+    "Screenshot_20230802-192852_Unifier.jpg",
+    "Screenshot_20230802-192322_Unifier.jpg",
+    "app/src/main/res/drawable/new_play_store_icon.png.opdownload",
+    "app/build/intermediates/bundle_ide_redirect_file/release/redirect.txt",
+    "app/build/intermediates/bundle_ide_redirect_file/release",
+    "app/build/intermediates/bundle_ide_redirect_file",
+    "app/build/intermediates/bundle_ide_model/release/output-metadata.json",
+    "app/build/intermediates/bundle_ide_model/release",
+    "app/build/intermediates/bundle_ide_model",
+    "app/release/app-release.aab",
+    "app/build/intermediates/intermediary_bundle/release/intermediary-bundle.aab",
+    "app/build/intermediates/intermediary_bundle/release"
+  ]
+}

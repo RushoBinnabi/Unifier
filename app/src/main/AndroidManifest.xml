@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Unifer" >
+        <activity
+            android:name=".Pricer"
+            android:exported="true" />
+        <activity
+            android:name=".PlayDice"
+            android:exported="true" />
+        <activity
+            android:name=".CombinationsandPermutations"
+            android:exported="true"/>
+        <activity
+            android:name=".PasswordGenerator"
+            android:exported="true"/>
+        <activity
+            android:name=".UsernameGenerator"
+            android:exported="true"/>
+        <activity
+            android:name=".LeetText"
+            android:exported="true"/>
+        <activity
+            android:name=".CoinToss"
+            android:exported="true"/>
+        <activity
+            android:name=".NumberGenerator"
+            android:exported="true"/>
+        <activity
+            android:name=".MeasurementConverter"
+            android:exported="true"/>
+        <activity
+            android:name=".MeasurementConverterOuncesToPounds"
+            android:exported="true"/>
+        <activity
+            android:name=".MeasurementConverterTonsToMilligrams"
+            android:exported="true"/>
+        <activity
+            android:name=".MeasurementConverterGramsToKilograms"
+            android:exported="true"/>
+        <activity
+            android:name=".MeasurementConverterCupsToPints"
+            android:exported="true"/>
+        <activity
+            android:name=".MeasurementConverterQuartsToGallons"
+            android:exported="true"/>
+        <activity
+            android:name=".MeasurementConverterMillimetersToCentimeters"
+            android:exported="true"/>
+        <activity
+            android:name=".MeasurementConverterMetersToKilometers"
+            android:exported="true"/>
+        <activity
+            android:name=".MeasurementConverterInchesToFeet"
+            android:exported="true"/>
+        <activity
+            android:name=".MeasurementConverterYardsToMiles"
+            android:exported="true"/>
+        <activity
+            android:name=".MeasurementConverterMillilitersToLiters"
+            android:exported="true"/>
+        <activity
+            android:name=".MeasurementConverterTemperature"
+            android:exported="true" />
+        <activity
+            android:name=".MeasurementConverterMillilitersToFluidOunces"
+            android:exported="true"/>
+        <activity
+            android:name=".MeasurementConverterTeaspoonsToTablespoons"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
