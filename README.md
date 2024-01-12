@@ -4,7 +4,7 @@
 	- The Unifier* app combines everyday useful tools that might be beneficial to have with you at all times. It can calculate prices of items based on a given discount or tax rate. It can convert temperatures. It can generate random usernames and passwords based on a given length if you ever need a new username or password. It can roll a pair of dices if you happen to be playing a board game and are in need of a dice or two. And a whole bunch of stuff.
 	- *final name to be determined.
 - #### Installation:
-	- This app cannot be installed on a computer. This app has to be downloaded and installed on a phone running Android 9 (Pie) or above using this [link](https://play.google.com/store/apps/details?id=rusho.app.unifer).
+	- This app cannot be installed on a computer unless you use an android emulator. This app has to be downloaded and installed on a phone running Android 9 (Pie) or above using this [link](https://play.google.com/store/apps/details?id=rusho.app.unifer).
 
 - #### How to Use:
 	- #### Main Menu:
