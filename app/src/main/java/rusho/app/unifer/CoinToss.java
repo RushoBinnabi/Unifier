@@ -2,8 +2,6 @@
  * Name: Rusho Binnabi
  * Date: 4/15/2023 at 11:01 PM
  * Project: Unifier - LeetText Function
- * Code File Updated: 4/17/2023 at 6:50 PM
- * Contact Information: RushoBinnabi123@yahoo.com
  */
 
 package rusho.app.unifer;
@@ -37,49 +35,105 @@ public class CoinToss extends AppCompatActivity {
     private int randomNumber;
     private Coins coin;
 
+    /**
+     * this setTossCoinButton() method sets the toss coin button.
+     */
+
     public void setTossCoinButton() {
         tossCoinButton = findViewById(R.id.tossCoinButton);
     }
+
+    /**
+     * this getTossCoinButton() method gets the toss coin button.
+     * @return the toss coin button.
+     */
 
     public Button getTossCoinButton() {
         return tossCoinButton;
     }
 
+    /**
+     * this setResetCoinTossButton() method sets the reset coin toss button.
+     */
+
     public void setResetCoinTossButton() {
         resetCoinTossButton = findViewById(R.id.coinTossResetButton);
     }
+
+    /**
+     * this getResetCoinTossButton() method gets the reset coin toss button.
+     * @return the reset coin toss button.
+     */
 
     public Button getResetCoinTossButton() {
         return resetCoinTossButton;
     }
 
+    /**
+     * this setRandomNumberGenerator() method sets the random number generator.
+     */
+
     public void setRandomNumberGenerator() {
         randomNumberGenerator = new Random();
     }
+
+    /**
+     * this getRandomNumberGenerator() method gets the random number generator.
+     * @return the random number generator.
+     */
 
     public Random getRandomNumberGenerator() {
         return randomNumberGenerator;
     }
 
+    /**
+     * this getCoinImage() method gets the coin image.
+     * @return the coin image.
+     */
+
     public ImageView getCoinImage() {
         return coinImage;
     }
+
+    /**
+     * this setCoinImage() method sets the coin image.
+     */
 
     public void setCoinImage() {
         coinImage = findViewById(R.id.coinImage);
     }
 
+    /**
+     * this getRandomNumber() method gets the random number.
+     * @return the random number.
+     */
+
     public int getRandomNumber() {
         return randomNumber;
     }
+
+    /**
+     * this setRandomNumber() method sets the random number.
+     * @param i the random number being set.
+     */
 
     public void setRandomNumber(int i) {
         randomNumber = i;
     }
 
+    /**
+     * this getCoinType() method gets the Coins enum type.
+     * @return the Coins enum type as a string.
+     */
+
     public String getCoinType() {
         return coin.name();
     }
+
+    /**
+     * this setCoinType() method sets the Coins enum type.
+     * @param coin the Coins enum type being set.
+     */
 
     public void setCoinType(Coins coin) {
         this.coin = coin;

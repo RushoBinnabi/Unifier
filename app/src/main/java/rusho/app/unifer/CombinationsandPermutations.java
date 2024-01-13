@@ -2,8 +2,6 @@
  * Name: Rusho Binnabi
  * Date: November 8th, 2022
  * Project: Unifier App - Combinations and Permutations Function
- * Contact Information: RushoBinnabi123@yahoo.com
- * Code File Updated: 4/16/2023 at 10:55 PM 
  */
 
 package rusho.app.unifer;
@@ -29,44 +27,219 @@ public class CombinationsandPermutations extends AppCompatActivity {
     // this class calculates combinations and permutations with or without repeats based on what the user inputs as numbers for total number of objects and the number of chosen objects.
 
     @SuppressLint("UseSwitchCompatOrMaterialCode") 
-    Switch repititionSwitch;
+    private Switch repititionSwitch;
     @SuppressLint("UseSwitchCompatOrMaterialCode") 
-    Switch orderMatters;
-    EditText totalNumberofObjectsEntry; 
-    EditText numberofObjectsChosenEntry;
-    Button calculateButton; 
-    Button resetButton;
-    String totalNumberofObjectsText; 
-    String numberofObjectsChosenText; 
-    long totalNumberofObjectsValue;
-    long numberofObjectsChosenValue;
+    private Switch orderMatters;
+    private EditText totalNumberofObjectsEntry;
+    private EditText numberofObjectsChosenEntry;
+    private Button calculateButton;
+    private Button resetButton;
+    private String totalNumberofObjectsText;
+    private String numberofObjectsChosenText;
+    private long totalNumberofObjectsValue;
+    private long numberofObjectsChosenValue;
 
-/*
-* this protected onCreate() method, which uses the Bundle savedInstanceObject as its argument, has the code for the Combinations and Permutations function that the Unifier app needs to function.
-* this method is void because it doesn't return anything.
-*/
+    /**
+     * this setRepititionSwitch() method sets the repitition switch.
+     */
+    public void setRepititionSwitch() {
+        repititionSwitch = findViewById(R.id.RepititionSwitch);
+    }
+
+    /**
+     * this getRepititionSwitch() method gets the repitition switch.
+     * @return the repitition switch.
+     */
+
+    public Switch getRepititionSwitch() {
+        return repititionSwitch;
+    }
+
+    /**
+     * this setOrderMatters() method sets the order matters switch.
+     */
+
+    public void setOrderMatters() {
+        orderMatters = findViewById(R.id.OrderSwitch);
+    }
+
+    /**
+     * this getOrderMatters() method gets the order matters switch.
+     * @return the order matters switch.
+     */
+
+    public Switch getOrderMatters() {
+        return orderMatters;
+    }
+
+    /**
+     * this setTotalNumberofObjectsEntry() method sets the total number of objects edit text.
+     */
+
+    public void setTotalNumberofObjectsEntry() {
+        totalNumberofObjectsEntry = findViewById(R.id.TotalNumberofObjectsEntry);
+    }
+
+    /**
+     * this getTotalNumberofObjectsEntry() method gets the total number of objects edit text.
+     * @return the total number of objects edit text.
+     */
+
+    public EditText getTotalNumberofObjectsEntry() {
+        return totalNumberofObjectsEntry;
+    }
+
+    /**
+     * this setNumberofObjectsChosenText() method sets the number of objects chosen edit text.
+     */
+
+    public void setNumberofObjectsChosenText() {
+        numberofObjectsChosenEntry = findViewById(R.id.NumberofObjectsChosenEntry);
+    }
+
+    /**
+     * this getNumberofObjectsChosenEntry() method gets the number of objects chosen edit text.
+     * @return the number of objects chosen edit text.
+     */
+
+    public EditText getNumberofObjectsChosenEntry() {
+        return numberofObjectsChosenEntry;
+    }
+
+    /**
+     * this setCalculateButton() method sets the calculate button.
+     */
+
+    public void setCalculateButton() {
+        calculateButton = findViewById(R.id.CalculateButton);
+    }
+
+    /**
+     * this getCalculateButton() method gets the calculate button.
+     * @return the calculate button.
+     */
+
+    public Button getCalculateButton() {
+        return calculateButton;
+    }
+
+    /**
+     * this setResetButton() method sets the reset button.
+     */
+
+    public void setResetButton() {
+        resetButton = findViewById(R.id.ResetButton);
+    }
+
+    /**
+     * this getResetButton() method gets the reset button.
+     * @return the reset button.
+     */
+
+    public Button getResetButton() {
+        return resetButton;
+    }
+
+    /**
+     * this getTotalNumberofObjectsValue() method gets the total number of objects value.
+     * @return the total number of objects value.
+     */
+
+    public long getTotalNumberofObjectsValue() {
+        return totalNumberofObjectsValue;
+    }
+
+    /**
+     * this setTotalNumberofObjectsValue() method sets the total number of objects value.
+     * @param value the total number of objects value.
+     */
+
+    public void setTotalNumberofObjectsValue(long value) {
+        totalNumberofObjectsValue = value;
+    }
+
+    /**
+     * this getNumberofObjectsChosenValue() method gets the number of objects chosen value.
+     * @return the number of objects chosen value.
+     */
+
+    public long getNumberofObjectsChosenValue() {
+        return numberofObjectsChosenValue;
+    }
+
+    /**
+     * this setNumberofObjectsChosenValue() method sets the number of objects chosen value.
+     * @param value the number of objects chosen value.
+     */
+
+    public void setNumberofObjectsChosenValue(long value) {
+        numberofObjectsChosenValue = value;
+    }
+
+    /**
+     * this setTotalNumberofObjectsText() method sets the text for the total number of objects.
+     * @param string the text for the total number of objects.
+     */
+
+    public void setTotalNumberofObjectsText(String string) {
+        totalNumberofObjectsText = string;
+    }
+
+    /**
+     * this getTotalNumberofObjectsText() method gets the text for the total number of objects.
+     * @return the text for the total number of objects.
+     */
+
+    public String getTotalNumberofObjectsText() {
+        return totalNumberofObjectsText;
+    }
+
+    /**
+     * this setNumberofObjectsChosenText() method sets the text for the number of objects chosen.
+     * @param string the text for the number of objects chosen.
+     */
+
+    public void setNumberofObjectsChosenText(String string) {
+        numberofObjectsChosenText = string;
+    }
+
+    /**
+     * this getNumberofObjectsChosenText() method gets the text for the number of objects chosen.
+     * @return the text for the number of objects chosen.
+     */
+
+    public String getNumberofObjectsChosenText() {
+        return numberofObjectsChosenText;
+    }
+
+
+
+    /*
+    * this protected onCreate() method, which uses the Bundle savedInstanceObject as its argument, has the code for the Combinations and Permutations function that the Unifier app needs to function.
+    * this method is void because it doesn't return anything.
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_combinations_and_permutations);
         activate();
-        resetButton.setOnClickListener(v -> reset()); 
-        calculateButton.setOnClickListener(v -> calculateCombinationsandPermutations()); 
+        getResetButton().setOnClickListener(v -> reset());
+        getCalculateButton().setOnClickListener(v -> calculateCombinationsandPermutations());
     }
 
-/*
-* this private void reset() method resets all the values of the variables and the objects.
-* this method is void because it doesn't return anything.
-*/
+    /*
+    * this private void reset() method resets all the values of the variables and the objects.
+    * this method is void because it doesn't return anything.
+    */
     private void reset() {
-        totalNumberofObjectsText = ""; 
-        numberofObjectsChosenText = ""; 
-        totalNumberofObjectsValue = 0; 
-        numberofObjectsChosenValue = 0; 
-        totalNumberofObjectsEntry.getText().clear();
-        numberofObjectsChosenEntry.getText().clear(); 
-        orderMatters.setChecked(false);
-        repititionSwitch.setChecked(false); 
+        setTotalNumberofObjectsText("");
+        setNumberofObjectsChosenText("");
+        setTotalNumberofObjectsValue(0);
+        setNumberofObjectsChosenValue(0);
+        getTotalNumberofObjectsEntry().getText().clear();
+        getNumberofObjectsChosenEntry().getText().clear();
+        getOrderMatters().setChecked(false);
+        getRepititionSwitch().setChecked(false);
     }
 
     /**
@@ -74,12 +247,16 @@ public class CombinationsandPermutations extends AppCompatActivity {
      */
 
     private void activate() {
-        repititionSwitch = findViewById(R.id.RepititionSwitch);
-        orderMatters = findViewById(R.id.OrderSwitch);
-        totalNumberofObjectsEntry = findViewById(R.id.TotalNumberofObjectsEntry); 
-        numberofObjectsChosenEntry = findViewById(R.id.NumberofObjectsChosenEntry); 
-        calculateButton = findViewById(R.id.CalculateButton); 
-        resetButton = findViewById(R.id.ResetButton); 
+        setRepititionSwitch();
+        setOrderMatters();
+        setTotalNumberofObjectsEntry();
+        setNumberofObjectsChosenText();
+        setCalculateButton();
+        setResetButton();
+        setTotalNumberofObjectsText("");
+        setNumberofObjectsChosenText("");
+        setTotalNumberofObjectsValue(0);
+        setNumberofObjectsChosenValue(0);
     }
 
     /**
@@ -167,33 +344,33 @@ public class CombinationsandPermutations extends AppCompatActivity {
 
     private void calculateCombinationsandPermutations() {
         try { 
-            if (repititionSwitch.isChecked() && orderMatters.isChecked()) { 
-                totalNumberofObjectsText = totalNumberofObjectsEntry.getText().toString();
-                numberofObjectsChosenText = numberofObjectsChosenEntry.getText().toString();
-                totalNumberofObjectsValue = Long.parseLong(totalNumberofObjectsText); 
-                numberofObjectsChosenValue = Long.parseLong(numberofObjectsChosenText); 
-                Toast.makeText(this, permutationsWithRepitition(totalNumberofObjectsValue, numberofObjectsChosenValue) + " permutations with repeats", Toast.LENGTH_SHORT).show();
+            if (getRepititionSwitch().isChecked() && getOrderMatters().isChecked()) {
+                setTotalNumberofObjectsText(getTotalNumberofObjectsEntry().getText().toString());
+                setNumberofObjectsChosenText(getNumberofObjectsChosenEntry().getText().toString());
+                setTotalNumberofObjectsValue(Long.parseLong(getTotalNumberofObjectsText()));
+                setNumberofObjectsChosenValue(Long.parseLong(getNumberofObjectsChosenText()));
+                Toast.makeText(this, permutationsWithRepitition(getTotalNumberofObjectsValue(), getNumberofObjectsChosenValue()) + " permutations with repeats", Toast.LENGTH_SHORT).show();
             }
-            else if (!repititionSwitch.isChecked() && orderMatters.isChecked()) { 
-                totalNumberofObjectsText = totalNumberofObjectsEntry.getText().toString(); 
-                numberofObjectsChosenText = numberofObjectsChosenEntry.getText().toString();
-                totalNumberofObjectsValue = Long.parseLong(totalNumberofObjectsText); 
-                numberofObjectsChosenValue = Long.parseLong(numberofObjectsChosenText);
-                Toast.makeText(this, permutationsWithoutRepitition(totalNumberofObjectsValue, numberofObjectsChosenValue) + " permutations without repeats", Toast.LENGTH_SHORT).show(); 
+            else if (!getRepititionSwitch().isChecked() && getOrderMatters().isChecked()) {
+                setTotalNumberofObjectsText(getTotalNumberofObjectsEntry().getText().toString());
+                setNumberofObjectsChosenText(getNumberofObjectsChosenEntry().getText().toString());
+                setTotalNumberofObjectsValue(Long.parseLong(getTotalNumberofObjectsText()));
+                setNumberofObjectsChosenValue(Long.parseLong(getNumberofObjectsChosenText()));
+                Toast.makeText(this, permutationsWithoutRepitition(getTotalNumberofObjectsValue(), getNumberofObjectsChosenValue()) + " permutations without repeats", Toast.LENGTH_SHORT).show();
             }
-            else if (repititionSwitch.isChecked() && !orderMatters.isChecked()) { 
-                totalNumberofObjectsText = totalNumberofObjectsEntry.getText().toString(); 
-                numberofObjectsChosenText = numberofObjectsChosenEntry.getText().toString(); 
-                totalNumberofObjectsValue = Long.parseLong(totalNumberofObjectsText);
-                numberofObjectsChosenValue = Long.parseLong(numberofObjectsChosenText);
-                Toast.makeText(this, combinationsWithRepetition(totalNumberofObjectsValue, numberofObjectsChosenValue) + " combinations with repeats", Toast.LENGTH_SHORT).show();
+            else if (getRepititionSwitch().isChecked() && !getOrderMatters().isChecked()) {
+                setTotalNumberofObjectsText(getTotalNumberofObjectsEntry().getText().toString());
+                setNumberofObjectsChosenText(getNumberofObjectsChosenEntry().getText().toString());
+                setTotalNumberofObjectsValue(Long.parseLong(getTotalNumberofObjectsText()));
+                setNumberofObjectsChosenValue(Long.parseLong(getNumberofObjectsChosenText()));
+                Toast.makeText(this, combinationsWithRepetition(getTotalNumberofObjectsValue(), getNumberofObjectsChosenValue()) + " combinations with repeats", Toast.LENGTH_SHORT).show();
             }
-            else if (!repititionSwitch.isChecked() && !orderMatters.isChecked()) { 
-                totalNumberofObjectsText = totalNumberofObjectsEntry.getText().toString();
-                numberofObjectsChosenText = numberofObjectsChosenEntry.getText().toString(); 
-                totalNumberofObjectsValue = Long.parseLong(totalNumberofObjectsText); 
-                numberofObjectsChosenValue = Long.parseLong(numberofObjectsChosenText);
-                Toast.makeText(this, combinationsWithoutRepitition(totalNumberofObjectsValue, numberofObjectsChosenValue) + " combinations without repeats", Toast.LENGTH_SHORT).show();
+            else if (!getRepititionSwitch().isChecked() && !getOrderMatters().isChecked()) {
+                setTotalNumberofObjectsText(getTotalNumberofObjectsEntry().getText().toString());
+                setNumberofObjectsChosenText(getNumberofObjectsChosenEntry().getText().toString());
+                setTotalNumberofObjectsValue(Long.parseLong(getTotalNumberofObjectsText()));
+                setNumberofObjectsChosenValue(Long.parseLong(getNumberofObjectsChosenText()));
+                Toast.makeText(this, combinationsWithoutRepitition(getTotalNumberofObjectsValue(), getNumberofObjectsChosenValue()) + " combinations without repeats", Toast.LENGTH_SHORT).show();
             } 
         } catch (NumberFormatException n) { 
             Toast toast = Toast.makeText(this, "Error. Please enter a number", Toast.LENGTH_SHORT); 

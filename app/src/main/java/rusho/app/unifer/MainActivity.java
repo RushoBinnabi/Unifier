@@ -2,8 +2,6 @@
  * Name: Rusho Binnabi
  * Date: August 16th, 2021
  * Project Name: Unifier App - Main Menu Function
- * Contact Information: RushoBinnabi123@yahoo.com
- * Code File Updated: 7/28/2023 at 9:17 PM
  */
 
 package rusho.app.unifer;
@@ -25,17 +23,205 @@ public class MainActivity extends AppCompatActivity {
 
     // this class has the functionalities of the functions of the app so when the user clicks on a button and confirms their choice, the menu will change to the menu of that function.
 
-    Button functionSelectButton;
-    RadioGroup functionRadioButtonGroup;
-    RadioButton pricerFunctionRadioButton;
-    RadioButton playDiceFunctionRadioButton;
-    RadioButton combinationsandPermutationsButton;
-    RadioButton passwordGeneratorButton;
-    RadioButton usernameGeneratorButton;
-    RadioButton leetTextRadioButton;
-    RadioButton coinTossRadioButton;
-    RadioButton numberGeneratorRadioButton;
-    RadioButton measurementConverterRadioButton;
+    private Button functionSelectButton;
+    private RadioGroup functionRadioButtonGroup;
+    private RadioButton pricerFunctionRadioButton;
+    private RadioButton playDiceFunctionRadioButton;
+    private RadioButton combinationsandPermutationsButton;
+    private RadioButton passwordGeneratorButton;
+    private RadioButton usernameGeneratorButton;
+    private RadioButton leetTextRadioButton;
+    private RadioButton coinTossRadioButton;
+    private RadioButton numberGeneratorRadioButton;
+    private RadioButton measurementConverterRadioButton;
+
+    /**
+     * this getFunctionSelectButton() method gets the function select button.
+     * @return the function select button.
+     */
+    public Button getFunctionSelectButton() {
+        return functionSelectButton;
+    }
+
+    /**
+     * this setFunctionSelectButton() method sets the function select button.
+     */
+
+    public void setFunctionSelectButton() {
+        functionSelectButton = findViewById(R.id.FunctionSelectButton);
+    }
+
+    /**
+     * this getFunctionRadioButtonGround() method gets the radio button group of functions.
+     * @return the radio button group of functions.
+     * currently unused.
+     */
+
+    public RadioGroup getFunctionRadioButtonGroup() {
+        return functionRadioButtonGroup;
+    }
+
+    /**
+     * this setFunctionRadioButtonGroup() method sets the radio button group of functions.
+     */
+
+    public void setFunctionRadioButtonGroup() {
+        functionRadioButtonGroup = findViewById(R.id.FunctionButtonsRadioGroup);
+    }
+
+    /**
+     * this getPricerFunctionRadioButton() method gets the radio button for the pricer function.
+     * @return the radio button for the pricer function.
+     */
+
+    public RadioButton getPricerFunctionRadioButton() {
+        return pricerFunctionRadioButton;
+    }
+
+    /**
+     * this setPricerFunctionRadioButton() method sets the radio button for the pricer function.
+     */
+
+    public void setPricerFunctionRadioButton() {
+        pricerFunctionRadioButton = findViewById(R.id.PricerFunctionRadioButton);
+    }
+
+    /**
+     * this getPlayDiceFunctionRadioButton() method gets the radio button for the play dice function.
+     * @return the radio button for the play dice function.
+     */
+
+    public RadioButton getPlayDiceFunctionRadioButton() {
+        return playDiceFunctionRadioButton;
+    }
+
+    /**
+     * this setPlayDiceFunctionRadioButton() method sets the radio button for the play dice function.
+     */
+
+    public void setPlayDiceFunctionRadioButton() {
+        playDiceFunctionRadioButton = findViewById(R.id.PlayDiceFunctionRadioButton);
+    }
+
+    /**
+     * this getCombinationsAndPermutationsButton() method gets the radio button for the combinations and permutations function.
+     * @return the radio button for the combinations and permutations function.
+     */
+
+    public RadioButton getCombinationsAndPermutationsButton() {
+        return combinationsandPermutationsButton;
+    }
+
+    /**
+     * this setCombinationsandPermutationsButton() method sets the radio button for the combinations and permutations function.
+     */
+
+    public void setCombinationsandPermutationsButton() {
+        combinationsandPermutationsButton = findViewById(R.id.CombinationsandPermutationsFunctionRadioButton);
+    }
+
+    /**
+     * this getPasswordGeneratorButton() method gets the radio button for the password generator function.
+     * @return the radio button for the password generator function.
+     */
+
+    public RadioButton getPasswordGeneratorButton() {
+        return passwordGeneratorButton;
+    }
+
+    /**
+     * this setPasswordGeneratorButton() method sets the radio button for the password generator function.
+     */
+
+    public void setPasswordGeneratorButton() {
+        passwordGeneratorButton = findViewById(R.id.PasswordGeneratorFunctionRadioButton);
+    }
+
+    /**
+     * this getUsernameGeneratorButton() method gets the radio button for the username generator function.
+     * @return the radio button for the username function.
+     */
+
+    public RadioButton getUsernameGeneratorButton() {
+        return usernameGeneratorButton;
+    }
+
+    /**
+     * this setUsernameGeneratorButton() method sets the radio button for the username generator function.
+     */
+
+    public void setUsernameGeneratorButton() {
+        usernameGeneratorButton = findViewById(R.id.UsernameGeneratorFunctionRadioButton);
+    }
+
+    /**
+     * this setLeetTextRadioButton() method sets the radio button for the leet text function.
+     */
+
+    public void setLeetTextRadioButton() {
+        leetTextRadioButton = findViewById(R.id.LeetTextFunctionRadioButton);
+    }
+
+    /**
+     * this getLeetTextRadioButton() method gets the radio button for the leet text function.
+     * @return the radio button for the leet text function.
+     */
+
+    public RadioButton getLeetTextRadioButton() {
+        return leetTextRadioButton;
+    }
+
+    /**
+     * this setCoinTossRadioButton() method sets the radio button for the coin toss function.
+     */
+
+    public void setCoinTossRadioButton() {
+        coinTossRadioButton = findViewById(R.id.CoinTossFunctionRadioButton);
+    }
+
+    /**
+     * this getCoinTossRadioButton() method gets the radio button for the coin toss function.
+     * @return the radio button for the coin toss function.
+     */
+
+    public RadioButton getCoinTossRadioButton() {
+        return coinTossRadioButton;
+    }
+
+    /**
+     * this getNumberGeneratorRadioButton() method gets the radio button for the number generator function.
+     * @return the radio button for the number generator function.
+     */
+
+    public RadioButton getNumberGeneratorRadioButton() {
+        return numberGeneratorRadioButton;
+    }
+
+    /**
+     * this setNumberGeneratorRadioButton() method sets the radio button for the number generator function.
+     */
+
+    public void setNumberGeneratorRadioButton() {
+        numberGeneratorRadioButton = findViewById(R.id.NumberGeneratorFunctionRadioButton);
+    }
+
+    /**
+     * this getMeasurementConverterRadioButton() method gets the radio button for the measurement converter function.
+     * @return the radio button for the measurement converter function.
+     */
+
+    public RadioButton getMeasurementConverterRadioButton() {
+        return measurementConverterRadioButton;
+    }
+
+    /**
+     * this setMeasurementConverterRadioButton() method sets the radio button for the measurement converter function.
+     */
+
+    public void setMeasurementConverterRadioButton() {
+        measurementConverterRadioButton = findViewById(R.id.MeasurementConverterFunctionRadioButton);
+    }
+
 
     /**
      * this onCreate() method has all the functionalities for the main menu function of my app to run.
@@ -48,40 +234,40 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         activate();
-        functionSelectButton.setOnClickListener(view -> {
-            if (playDiceFunctionRadioButton.isChecked()) {
+        getFunctionSelectButton().setOnClickListener(view -> {
+            if (getPlayDiceFunctionRadioButton().isChecked()) {
                 Intent intent = new Intent(view.getContext(), PlayDice.class);
                 startActivity(intent);
             }
-            else if (pricerFunctionRadioButton.isChecked()) {
+            else if (getPricerFunctionRadioButton().isChecked()) {
                 Intent intent = new Intent(view.getContext(), Pricer.class);
                 startActivity(intent);
             }
-            else if (combinationsandPermutationsButton.isChecked()) {
+            else if (getCombinationsAndPermutationsButton().isChecked()) {
                 Intent intent = new Intent(view.getContext(), CombinationsandPermutations.class);
                 startActivity(intent);
             }
-            else if (passwordGeneratorButton.isChecked()) {
+            else if (getPasswordGeneratorButton().isChecked()) {
                 Intent intent = new Intent(view.getContext(), PasswordGenerator.class);
                 startActivity(intent);
             }
-            else if (usernameGeneratorButton.isChecked()) {
+            else if (getUsernameGeneratorButton().isChecked()) {
                 Intent intent = new Intent(view.getContext(), UsernameGenerator.class);
                 startActivity(intent);
             }
-            else if (leetTextRadioButton.isChecked()) {
+            else if (getLeetTextRadioButton().isChecked()) {
                 Intent intent = new Intent(view.getContext(), LeetText.class);
                 startActivity(intent);
             }
-            else if (coinTossRadioButton.isChecked()) {
+            else if (getCoinTossRadioButton().isChecked()) {
                 Intent intent = new Intent(view.getContext(), CoinToss.class);
                 startActivity(intent);
             }
-            else if (numberGeneratorRadioButton.isChecked()) {
+            else if (getNumberGeneratorRadioButton().isChecked()) {
                 Intent intent = new Intent(view.getContext(), NumberGenerator.class);
                 startActivity(intent);
             }
-            else if (measurementConverterRadioButton.isChecked()) {
+            else if (getMeasurementConverterRadioButton().isChecked()) {
                 Intent intent = new Intent(view.getContext(), MeasurementConverter.class);
                 startActivity(intent);
             }
@@ -93,16 +279,16 @@ public class MainActivity extends AppCompatActivity {
      */
 
     private void activate() {
-        functionSelectButton = findViewById(R.id.FunctionSelectButton);
-        functionRadioButtonGroup = findViewById(R.id.FunctionButtonsRadioGroup);
-        pricerFunctionRadioButton = findViewById(R.id.PricerFunctionRadioButton);
-        playDiceFunctionRadioButton = findViewById(R.id.PlayDiceFunctionRadioButton);
-        combinationsandPermutationsButton = findViewById(R.id.CombinationsandPermutationsFunctionRadioButton);
-        passwordGeneratorButton = findViewById(R.id.PasswordGeneratorFunctionRadioButton);
-        usernameGeneratorButton = findViewById(R.id.UsernameGeneratorFunctionRadioButton);
-        leetTextRadioButton = findViewById(R.id.LeetTextFunctionRadioButton);
-        coinTossRadioButton = findViewById(R.id.CoinTossFunctionRadioButton);
-        numberGeneratorRadioButton = findViewById(R.id.NumberGeneratorFunctionRadioButton);
-        measurementConverterRadioButton = findViewById(R.id.MeasurementConverterFunctionRadioButton);
+        setFunctionSelectButton();
+        setFunctionRadioButtonGroup();
+        setPricerFunctionRadioButton();
+        setPlayDiceFunctionRadioButton();
+        setCombinationsandPermutationsButton();
+        setPasswordGeneratorButton();
+        setUsernameGeneratorButton();
+        setLeetTextRadioButton();
+        setCoinTossRadioButton();
+        setNumberGeneratorRadioButton();
+        setMeasurementConverterRadioButton();
     }
 }
