@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton combinationsandPermutationsButton;
     private RadioButton passwordGeneratorButton;
     private RadioButton usernameGeneratorButton;
-    private RadioButton leetTextRadioButton;
     private RadioButton coinTossRadioButton;
     private RadioButton numberGeneratorRadioButton;
     private RadioButton measurementConverterRadioButton;
@@ -155,23 +154,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * this setLeetTextRadioButton() method sets the radio button for the leet text function.
-     */
-
-    public void setLeetTextRadioButton() {
-        leetTextRadioButton = findViewById(R.id.LeetTextFunctionRadioButton);
-    }
-
-    /**
-     * this getLeetTextRadioButton() method gets the radio button for the leet text function.
-     * @return the radio button for the leet text function.
-     */
-
-    public RadioButton getLeetTextRadioButton() {
-        return leetTextRadioButton;
-    }
-
-    /**
      * this setCoinTossRadioButton() method sets the radio button for the coin toss function.
      */
 
@@ -255,10 +237,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(view.getContext(), UsernameGenerator.class);
                 startActivity(intent);
             }
-            else if (getLeetTextRadioButton().isChecked()) {
-                Intent intent = new Intent(view.getContext(), LeetText.class);
-                startActivity(intent);
-            }
             else if (getCoinTossRadioButton().isChecked()) {
                 Intent intent = new Intent(view.getContext(), CoinToss.class);
                 startActivity(intent);
@@ -286,7 +264,6 @@ public class MainActivity extends AppCompatActivity {
         setCombinationsandPermutationsButton();
         setPasswordGeneratorButton();
         setUsernameGeneratorButton();
-        setLeetTextRadioButton();
         setCoinTossRadioButton();
         setNumberGeneratorRadioButton();
         setMeasurementConverterRadioButton();

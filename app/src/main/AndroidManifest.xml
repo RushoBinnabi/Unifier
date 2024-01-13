@@ -24,9 +24,6 @@
             android:name=".UsernameGenerator"
             android:exported="true"/>
         <activity
-            android:name=".LeetText"
-            android:exported="true"/>
-        <activity
             android:name=".CoinToss"
             android:exported="true"/>
         <activity
