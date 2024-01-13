@@ -30,11 +30,60 @@ public class CoinToss extends AppCompatActivity {
 
     // this class simulates a coin toss.
 
-    Button resetCoinTossButton;
-    Button tossCoinButton;
-    Random randomNumberGenerator;
-    ImageView coinImage;
-    int randomNumber;
+    private Button resetCoinTossButton;
+    private Button tossCoinButton;
+    private Random randomNumberGenerator;
+    private ImageView coinImage;
+    private int randomNumber;
+    private Coins coin;
+
+    public void setTossCoinButton() {
+        tossCoinButton = findViewById(R.id.tossCoinButton);
+    }
+
+    public Button getTossCoinButton() {
+        return tossCoinButton;
+    }
+
+    public void setResetCoinTossButton() {
+        resetCoinTossButton = findViewById(R.id.coinTossResetButton);
+    }
+
+    public Button getResetCoinTossButton() {
+        return resetCoinTossButton;
+    }
+
+    public void setRandomNumberGenerator() {
+        randomNumberGenerator = new Random();
+    }
+
+    public Random getRandomNumberGenerator() {
+        return randomNumberGenerator;
+    }
+
+    public ImageView getCoinImage() {
+        return coinImage;
+    }
+
+    public void setCoinImage() {
+        coinImage = findViewById(R.id.coinImage);
+    }
+
+    public int getRandomNumber() {
+        return randomNumber;
+    }
+
+    public void setRandomNumber(int i) {
+        randomNumber = i;
+    }
+
+    public String getCoinType() {
+        return coin.name();
+    }
+
+    public void setCoinType(Coins coin) {
+        this.coin = coin;
+    }
 
     /**
      * this enum Coins will have the two values of either side of a coin and will be used to show what side of the coin it got tossed on in the tossCoin() method.
@@ -55,8 +104,8 @@ public class CoinToss extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coin_toss);
         activate();
-        resetCoinTossButton.setOnClickListener(v -> resetCoinTossValues());
-        tossCoinButton.setOnClickListener(v -> tossCoin());
+        getResetCoinTossButton().setOnClickListener(v -> resetCoinTossValues());
+        getTossCoinButton().setOnClickListener(v -> tossCoin());
     }
 
     /**
@@ -64,11 +113,11 @@ public class CoinToss extends AppCompatActivity {
      */
 
     private void activate() {
-        randomNumber = 0;
-        coinImage = findViewById(R.id.coinImageButton);
-        randomNumberGenerator = new Random();
-        tossCoinButton = findViewById(R.id.tossCoinButton);
-        resetCoinTossButton = findViewById(R.id.coinTossResetButton);
+        setRandomNumber(0);
+        setCoinImage();
+        setRandomNumberGenerator();
+        setTossCoinButton();
+        setResetCoinTossButton();
     }
 
     /**
@@ -76,22 +125,22 @@ public class CoinToss extends AppCompatActivity {
      */
 
     private void tossCoin() {
-        randomNumber = 1 + randomNumberGenerator.nextInt(2);
-        switch (randomNumber) {
+        setRandomNumber(1 + getRandomNumberGenerator().nextInt(2));
+        switch (getRandomNumber()) {
             case 1:
-                Coins coinHead = Coins.HEADS;
-                Toast toast = Toast.makeText(this, "Coin Toss: " + coinHead, Toast.LENGTH_SHORT);
+                setCoinType(Coins.HEADS);
+                Toast toast = Toast.makeText(this, "Coin Toss: " + getCoinType(), Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.BOTTOM, 0, 120);
                 toast.show();
-                coinImage.setBackgroundResource(R.drawable.coinhead); // sets the image to the head side of the coin toss first before animating it so it doesn't animate an empty imageview object.
+                getCoinImage().setBackgroundResource(R.drawable.coinhead); // sets the image to the head side of the coin toss first before animating it so it doesn't animate an empty imageview object.
                 animation();
                 break;
             case 2:
-                Coins coinTail = Coins.TAILS;
-                Toast toast2 = Toast.makeText(this, "Coin Toss: " + coinTail, Toast.LENGTH_SHORT);
+                setCoinType(Coins.TAILS);
+                Toast toast2 = Toast.makeText(this, "Coin Toss: " + getCoinType(), Toast.LENGTH_SHORT);
                 toast2.setGravity(Gravity.BOTTOM, 0, 120);
                 toast2.show();
-                coinImage.setBackgroundResource(R.drawable.cointail); // sets the image to the tail side of the coin toss first before animating it so it doesn't animate an empty imageview object.
+                getCoinImage().setBackgroundResource(R.drawable.cointail); // sets the image to the tail side of the coin toss first before animating it so it doesn't animate an empty imageview object.
                 animation();
                 break;
         }
@@ -102,7 +151,7 @@ public class CoinToss extends AppCompatActivity {
      */
 
     private void resetCoinTossValues() {
-        randomNumber = 0;
+        setRandomNumber(0);
         reverseAnimation();
     }
 
@@ -112,7 +161,7 @@ public class CoinToss extends AppCompatActivity {
 
     private void animation() {
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.custom_animation_coin_toss);
-        coinImage.startAnimation(animation);
+        getCoinImage().startAnimation(animation);
     }
 
     /**
@@ -121,7 +170,7 @@ public class CoinToss extends AppCompatActivity {
 
     private void reverseAnimation() {
         Animation reverseAnimation = AnimationUtils.loadAnimation(this, R.anim.custom_reverse_animation_coin_toss);
-        coinImage.startAnimation(reverseAnimation);
+        getCoinImage().startAnimation(reverseAnimation);
     }
 
     /**
